@@ -6,7 +6,7 @@
 #    By: sshakya <sshakya@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/02/21 10:41:36 by sshakya           #+#    #+#              #
-#    Updated: 2021/02/21 18:11:03 by sshakya          ###   ########.fr        #
+#    Updated: 2021/02/22 18:52:18 by sshakya          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -63,5 +63,6 @@ RUN		chmod 755 var/www/html
 
 EXPOSE	80 443
 
+# script to setup wordpress SQL DB and start php-fpm, nginx and mysql
 COPY	srcs/setup.sh ./
 CMD		bash setup.sh
